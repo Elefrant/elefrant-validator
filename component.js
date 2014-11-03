@@ -11,7 +11,7 @@ module.exports = {
 		weight: 1,
 		func: function (elefrant, server) {
 			return server.use(validator.validationPlugin( {
-				errorsAsArray: false
+				errorsAsArray: true
 			}));
 		}
 	},
