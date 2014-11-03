@@ -12,7 +12,7 @@ module.exports = {
 		func: function (elefrant, server) {
 			return server.use(validator.validationPlugin( {
 				errorsAsArray: false
-			}))
+			}));
 		}
 	},
 
