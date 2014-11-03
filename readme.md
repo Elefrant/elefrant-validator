@@ -1,8 +1,8 @@
 # elefrant-validator Component
 
-[![wercker status](https://app.wercker.com/status/b7d41c1834c19d26ef9ca722a320b6a5/s/master "wercker status")](https://app.wercker.com/project/bykey/b7d41c1834c19d26ef9ca722a320b6a5)
+[![wercker status](https://app.wercker.com/status/5d9db5b306c9adca9fc2cf913e1cb0fb/s/master "wercker status")](https://app.wercker.com/project/bykey/5d9db5b306c9adca9fc2cf913e1cb0fb)
 
-[![Dependency Status](https://gemnasium.com/Elefrant/elefrant-oauth2.svg)](https://gemnasium.com/Elefrant/elefrant-oauth2)
+[![Dependency Status](https://gemnasium.com/Elefrant/elefrant-validator.svg)](https://gemnasium.com/Elefrant/elefrant-validator)
 
 
 ## Usage
