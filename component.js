@@ -7,16 +7,19 @@ module.exports = {
 
 	name: 'validator',
 
-	afterServer: function (elefrant, server) {
-		return server.use(validator.validationPlugin( {
-			errorsAsArray: false
-		}));
+	afterServer: {
+		weight: 1,
+		func: function (elefrant, server) {
+			return server.use(validator.validationPlugin( {
+				errorsAsArray: false
+			}))
+		}
 	},
 
-	paramRoute: function (elefrant, route) {
-		if(route && route.action) {
+	paramRoute: function (elefrant, route, action) {
+		if(action && action.validation) {
 			return {
-				validation: route.action.validation !== undefined ? route.action.validation : false
+				validation: action.validation !== undefined ? action.validation : false
 			};
 		} else {
 			return {};
