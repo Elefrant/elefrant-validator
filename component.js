@@ -14,9 +14,9 @@ module.exports = {
 	},
 
 	paramRoute: function (elefrant, route) {
-		if(route) {
+		if(route && route.action) {
 			return {
-				validation: route.validation !== undefined ? route.validation : false
+				validation: route.action.validation !== undefined ? route.action.validation : false
 			};
 		} else {
 			return {};
