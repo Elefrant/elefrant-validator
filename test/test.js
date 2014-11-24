@@ -13,7 +13,7 @@ describe('Validator', function () {
 	});
 
 	it('check afterServer', function () {
-		should(component.afterServer.func({}, server)).be.ok;
+		should(component.afterServer.func({}, server, restify)).be.ok;
 	});
 
 	it('check paramRoute', function () {
