@@ -1,6 +1,6 @@
 'use strict';
 
-var validator = require('node-restify-validation');
+var validator = require('node-restify-validation-request');
 
 module.exports = {
 	enable: true,
@@ -8,10 +8,11 @@ module.exports = {
 	name: 'validator',
 
 	afterServer: {
-		weight: 1,
-		func: function (elefrant, server) {
+		weight: 2,
+		func: function (elefrant, server, restify) {
 			return server.use(validator.validationPlugin( {
-				errorsAsArray: true
+				errorsAsArray: true,
+				errorHandler: restify.errors.ValidationError
 			}));
 		}
 	},
