@@ -1,6 +1,6 @@
 'use strict';
 
-var validator = require('node-restify-validation-request');
+var validator = require('node-restify-validation');
 
 module.exports = {
 	enable: true,
