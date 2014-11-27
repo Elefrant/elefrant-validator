@@ -32,7 +32,7 @@
 		"elefrant": ">=0.2.x"
 	},
 	"dependencies": {
-		"node-restify-validation": "~0.1.0"
+		"node-restify-validation": "~0.1.2"
 	},
 	"devDependencies": {
 		"grunt-cli": "~0.1.13",
